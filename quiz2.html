@@ -1,72 +1,89 @@
-<!doctype html>
+<!-- Changes made by Austin Martin -->
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Quiz 2</title>
-  </head>
-  <bod>
+    <link rel="stylesheet" href="quiz2.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+        <!--
+        Script can either be here or in the external JS sheet. It's better to include in the external sheet but this works
+        fine
+        -->
+        <script type="text/javascript">
+            function hi() {
+                console.log('hello there!');
+            }
+            window.onload = hi;
+        </script>
+        <script language="JavaScript" type="text/javascript" src="quiz2.js"></script>
+
+</head>
+<body>
     <header>
-      <h1>This is the second quiz</h1
+        <h1>This is the second quiz</h1>
+    </header>
 
-    <section id="firstSection">
-      <nav>
-        <ul>
-          <li>
-            <a href="google.co">Google<a>
-          </li>
-          <li>
-            <a href="mattbowytz.com">Class Site</a>
-          </li>
-          <li/>
-            <a href="amazon.com">Amazon</a>
-          </li>
-        </ul>
-      </nav>
-    </section>
+        <section id="firstSection">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="http://www.google.com">Google</a>
+                    </li>
+                    <li>
+                        <a href="http://mattbowytz.com">Class Site</a>
+                    </li>
+                    <li>
+                    <a href="http://amazon.com">Amazon</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
 
-    <sectio clas="dynamic"></sectio>
+        <section class="dynamic">
 
-    <section>
-      <p>This is a List<p>
-      <ul>
-        <li>Item 1</li>
-        <a>Item 2</a>
-        </li>Item 3</li>
-        <li>Item 4</li>>
-      </ul>
-    </section>
+        </section>
 
-    <section id="thirdSection">
+        <section id = "secondSection">
+            <p>This is a List<p>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ul>
+        </section>
 
-      <foam action="" method="get">
-        fieldset
-          <label for="first_name">First Name</label>
-          <input type="txt" id="first_name">
-        </fieldset>
-        <fieldset>
-          <label for="first_name">Last Name</label>
-          <input type="text" id="last_name">
-        </fieldset>
-        <fieldset>
-          <label for="email_name">Email Address</label>
-          <input type="email" id="email_name">
-        </fieldset>
-        <fieldset>
-          <input type="color" value="sunbmit">
-          <input type="date" value="reset">
-        </fieldset>
-      </foam>
+        <section id="thirdSection">
 
-    </section>
+            <form action="" method="get">
+                <fieldset>
+                    <label for="first_name">First Name</label>
+                    <input type="text" id="first_name">
+                </fieldset>
+                <fieldset>
+                    <label for="last_name">Last Name</label>
+                    <input type="text" id="last_name">
+                </fieldset>
+                <fieldset>
+                    <label for="email_name">Email Address</label>
+                    <input type="email" id="email_name">
+                </fieldset>
+                <fieldset>
+                    <button type="submit" value="Submit">Submit</button>
+                    <button type="reset" value="Reset">Reset</button>
+                </fieldset>
+            </form>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js">
-    <script>
-      (funciton() {
-        console.log('hello there!');
-      })()
-    </script>>
+        </section>
 
-  </bod>
+
+
+</body>
+
+</html>
