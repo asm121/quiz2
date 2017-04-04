@@ -1,3 +1,13 @@
-consle.log('welocme to quiz town, population...YOU!')
+//Changes made by Austin Martin
 
-@('.dynamic').hmtl('<div p>HI THERE, I\'M FROM JAVASCRIPT</p></div>').fadeIn('slo')
+console.log('welcome to quiz town, population...YOU!');
+
+
+
+//Original
+//@('.dynamic').hmtl('<div p>HI THERE, I\'M FROM JAVASCRIPT</p></div>').fadeIn('slo')
+
+$(document).ready(function () {
+    $('.dynamic').html('<div><p>HI THERE, I\'M FROM JAVASCRIPT</p></div>').fadeIn('slow');
+});
+
